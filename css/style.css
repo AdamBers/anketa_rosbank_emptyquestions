@@ -68,6 +68,8 @@ form {
     text-align: center;
     color: #1E2025;
     margin-bottom: 28px;
+    position: absolute;
+    top: 15%
 }
 
 .question {
@@ -161,10 +163,14 @@ input[type=text], textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     margin-bottom: 28px;
     cursor: pointer;
     transform: rotateY(180deg);
+    position: absolute;
+    /* margin: 0 auto; */
+    top: 42%;
+    left: calc((100% - 200px) / 2);
+
 }
 
 .rating label {
