@@ -15,36 +15,38 @@
 
 <body>
 
-    <div class="header">
-        <img src="./img/logo.svg" alt="logo">
-    </div>
+
     <div class="main-container">
+        <div class="header">
+            <img src="./img/logo.svg" alt="logo">
+        </div>
+        <div class="main-question">
+            <p>Оцените, пожалуйста, насколько Вы удовлетворены решением по Вашему вопросу?</p>
+        </div>
         <form action="end.html" id='myForm'>
-            <div>
-                <div class="main-question">
-                    <p>Оцените, пожалуйста, насколько Вы удовлетворены решением по Вашему вопросу?</p>
-                </div>
+            <!-- <div class="one"> -->
 
-                <div class="rating" onchange="handleStar(event)">
-                    <input type="radio" name="star" id="star1"><label for="star1" class="fa fa-star"
-                        id="star1label"></label>
-                    <input type="radio" name="star" id="star2"><label for="star2" class="fa fa-star"
-                        id="star2label"></label>
-                    <input type="radio" name="star" id="star3"><label for="star3" class="fa fa-star"
-                        id="star3label"></label>
-                    <input type="radio" name="star" id="star4"><label for="star4" class="fa fa-star"
-                        id="star4label"></label>
-                    <input type="radio" name="star" id="star5"><label for="star5" class="fa fa-star"
-                        id="star5label"></label>
-                </div>
-                <div class="error-message hidden" id='error-message'>
-                    <p class="message">Пожалуйста, выберите оценку от 1 до 5</p>
-                </div>
+
+            <div class="rating" onchange="handleStar(event)">
+                <input type="radio" name="star" id="star1" value="5">
+                <label for="star1" class="fa fa-star" id="star1label"></label>
+                <input type="radio" name="star" id="star2" value="4">
+                <label for="star2" class="fa fa-star" id="star2label"></label>
+                <input type="radio" name="star" id="star3" value="3">
+                <label for="star3" class="fa fa-star" id="star3label"></label>
+                <input type="radio" name="star" id="star4" value="2">
+                <label for="star4" class="fa fa-star" id="star4label"></label>
+                <input type="radio" name="star" id="star5" value="1">
+                <label for="star5" class="fa fa-star" id="star5label"></label>
+            </div>
+            <div class="error-message hidden" id='error-message'>
+                <p class="message">Пожалуйста, выберите оценку от 1 до 5</p>
+            </div>
 
 
 
-                <!-- <div class="content">
-                    <div class="q-1 hidden" id='question1'>
+            <div class="content">
+                <!-- <div class="q-1 hidden" id='question1'>
                         <p class="question">Что вас разочаровало?</p>
                         <input type="checkbox" id="notDecision" name="sadFor" value="notDecision">
                         <label for="notDecision">Не решен вопрос</label>
@@ -68,6 +70,7 @@
                         <label for="moreKnowledge">Улучшить знания сотрудников</label>
                         <input type="checkbox" id="beKind" name="sadFor2" value="beKind">
                         <label for="beKind">Быть вежливее</label>
+
                     </div>
 
                     <div class="q-3 hidden" id='question3'>
@@ -80,6 +83,7 @@
                         <label for="goodKnowledge">Компетентность сотрудника</label>
                         <input type="checkbox" id="goodKind" name="sadFor3" value="goodKind">
                         <label for="goodKind">Вежливость и учтивость</label>
+
                     </div>
 
                     <div class="error-message_2 hidden" id="error_2">
@@ -88,24 +92,19 @@
 
                     <div class="comment hidden" id="comment_div">
                         <p class="comment_p">Комментарий</p>
-                      
+                        
                         <textarea cols="60" name="text" wrap="soft" name="comment" id="comment"
                             placeholder="Оставьте комментарий..." value="" onclick="handleComment(event)"></textarea>
                     </div>
 
                     <div class="error-message_3 hidden" id="error_3">
                         <p class="message">Пожалуйста, введите комментарий</p>
-                    </div>
-                </div> -->
-            </div>
-
-            <div>
-                <input type="submit" name="grade" id="send" value="Оценить" class="hidden">
+                    </div> -->
             </div>
         </form>
 
+        <input type="submit" id="send" class="hidden" form="myForm" value="Оценить">
     </div>
-
     <script src="./js/script.js"></script>
 </body>
 
